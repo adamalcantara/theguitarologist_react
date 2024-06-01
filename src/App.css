@@ -5,3 +5,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pageContent {
+  width: 90%;
+  margin: 0 auto;
+}

@@ -7,6 +7,9 @@ function App() {
     <Router>
       <div className="App">
       <Navbar />
+      <div className='pageContent'>
+        <p>The content</p>
+      </div>
       </div>
     </Router>
   );
