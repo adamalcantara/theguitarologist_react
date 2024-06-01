@@ -1,32 +1,21 @@
-import * as React from 'react'
-import "yet-another-react-lightbox/styles.css"
+import React from "react";
+import PhotoAlbum from "react-photo-album";
 
-// import dependencies
-import PhotoAlbum from 'react-photo-album';
-import Lightbox from 'yet-another-react-lightbox';
+// Import images
+import img1 from "./images/image1.jpg";
+import img2 from "./images/image2.jpg";
+import img3 from "./images/image3.jpg";
 
-import photos from "../../Data/photos.ts";
+const photos = [
+  {src: img1, width: 2000, height: 1333},
+  {src: img2, width: 2000, height: 1333},
+  {src: img2, width: 2000, height: 1333},
+]
 
-const Work = () => {
-  const [index, setIndex] = React.useState(-1);
-
+export default function Work() {
   return (
     <div>
-      <PhotoAlbum 
-        layout='rows' 
-        photos={photos} 
-        targetRowHeight={200} 
-        onClick={({ index: current }) => setIndex(current)}
-       />
-
-      <Lightbox 
-        index={index} 
-        slides={photos} 
-        open={index >= 0} 
-        close={() => setIndex(-1)}
-      />
+      <PhotoAlbum layout="rows" photos={photos} targetRowHeight={200} />
     </div>
-  );
+  )  
 }
-
-export default Work
