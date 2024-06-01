@@ -18,7 +18,6 @@ class Navbar extends Component {
             <div id='navbar'>
                 {/* Logo */}
                 <img src={logo} alt="The Guitarologist Logo" id="logo"></img>
-                {/* Mobile Nav */}
                 {/* Nav */}
                 <ul id='navigation'>
                     <li><Link className='menuItem'>My Work</Link></li>
@@ -29,14 +28,22 @@ class Navbar extends Component {
 
             {/* Mobile navigation */}
             <div id='mobileNav'>
-                {/* mobile logo */}
-                <img src={logo} alt="The Guitarologist Logo" id='mobileLogo'></img>
+                <div id='mobileHeader'>
+                    {/* mobile logo */}
+                    <img src={logo} alt="The Guitarologist Logo" id='mobileLogo'></img>
 
-                {/* Hamburger element for mobile navbar */}
-                <div id='burger' onClick={this.handleClick}>
-                    <div id='line1' className={this.state.clicked ? 'line1click' : ''}></div>
-                    <div id='line2' className={this.state.clicked ? 'line2click' : ''}></div>
-                    <div id='line3' className={this.state.clicked ? 'line3click' : ''}></div>
+                    {/* Hamburger element for mobile navbar */}
+                    <div id='burger' onClick={this.handleClick}>
+                        <div id='line1' className={this.state.clicked ? 'line1click' : ''}></div>
+                        <div id='line2' className={this.state.clicked ? 'line2click' : ''}></div>
+                        <div id='line3' className={this.state.clicked ? 'line3click' : ''}></div>
+                    </div>
+                </div>
+
+                <div className={this.state.clicked ? 'navbar active' : 'navbar'}>
+                    <Link className='mobileItem'>My Work</Link>
+                    <Link className='mobileItem'>About</Link>
+                    <Link className='mobileItem'>Contact</Link>
                 </div>
             </div>
         </div>

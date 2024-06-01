@@ -28,6 +28,10 @@
 /* Mobile Nav */
 #mobileNav {
     display: none;
+}
+#mobileHeader {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -43,6 +47,11 @@
     background-color: white;
     border-radius: 10px;
     margin-right: 20px;
+}
+.mobileItem {
+    text-decoration: none;
+    font-size: 35px;
+    margin: 20px auto;
 }
 
 /* Animate the hamburger after the handleclick function is called */
@@ -63,7 +72,26 @@
         display: none;
     }
     #mobileNav {
+        display: block;
+    }
+    .navbar {
+        width: 100%;
+        height: calc(100vh - 100px);
+        top: 95px;
+        left: -100%;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 0;
+        margin-bottom: 10px;
+        background-color: black;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+    .navbar.active {
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 10000;
     }
 }
