@@ -33,7 +33,7 @@ class Navbar extends Component {
                 <img src={logo} alt="The Guitarologist Logo" id='mobileLogo'></img>
 
                 {/* Hamburger element for mobile navbar */}
-                <div id='burger'>
+                <div id='burger' onClick={this.handleClick}>
                     <div id='line1' className={this.state.clicked ? 'line1click' : ''}></div>
                     <div id='line2' className={this.state.clicked ? 'line2click' : ''}></div>
                     <div id='line3' className={this.state.clicked ? 'line3click' : ''}></div>
