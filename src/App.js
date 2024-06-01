@@ -6,19 +6,23 @@ import Navbar from './Components/Navbar/Navbar';
 import About from "./Pages/About/About";
 import Work from "./Pages/Work/Work";
 import Contact from "./Pages/Contact/Contact";
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <Router>
       <div className="App">
-      <Navbar />
-      <div className='pageContent'>
-        <Routes>
-          <Route path='/' element={<Work />}></Route>
-          <Route path='/about' element={<About />}></Route>
-          <Route path='/contact' element={<Contact />}></Route>
-        </Routes>
-      </div>
+        <div id='contentContainer'>
+          <Navbar />
+          <div className='pageContent'>
+            <Routes>
+              <Route path='/' element={<Work />}></Route>
+              <Route path='/about' element={<About />}></Route>
+              <Route path='/contact' element={<Contact />}></Route>
+            </Routes>
+          </div>
+        </div>
+        <Footer />
       </div>
     </Router>
   );
