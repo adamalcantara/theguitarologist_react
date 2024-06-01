@@ -12,6 +12,10 @@
   justify-content: center;
 }
 
+h1, h2, .testimonialText {
+  text-align: center;
+}
+
 .pageContent {
   width: 90%;
   margin: 0 auto;

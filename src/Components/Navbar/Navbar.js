@@ -41,9 +41,9 @@ class Navbar extends Component {
                 </div>
 
                 <div className={this.state.clicked ? 'navbar active' : 'navbar'}>
-                    <Link to="/" className='mobileItem'>My Work</Link>
-                    <Link to="/about" className='mobileItem'>About</Link>
-                    <Link to="/contact" className='mobileItem'>Contact</Link>
+                    <Link to="/" className='mobileItem' onClick={this.handleClick}>My Work</Link>
+                    <Link to="/about" className='mobileItem' onClick={this.handleClick}>About</Link>
+                    <Link to="/contact" className='mobileItem' onClick={this.handleClick}>Contact</Link>
                 </div>
             </div>
         </div>

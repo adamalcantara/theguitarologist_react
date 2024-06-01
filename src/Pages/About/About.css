@@ -1,0 +1,74 @@
+#about {
+    font-size: 20px;
+}
+
+#adamHeadshot {
+    float: left;
+    width: 20%;
+    height: auto;
+    margin: 0 20px 20px 0;
+}
+
+.spacer {
+    height: 50px;
+}
+
+#socialGrid {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: 0 auto;
+}
+
+.links {
+    width: 100%;
+    padding-bottom: 66%;
+    position: relative;
+    background-color: red;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(25, 25, 25, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    transition: 0.3s ease;
+}
+
+.overlay:hover {
+    background-color: rgba(25, 25, 25, 0.8);
+}
+
+#testimonialsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+    #adamHeadshot {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #adamHeadshot {
+        width: 100%;
+    }
+    #socialGrid {
+        grid-template-columns: 1fr;
+    }
+    .overlay {
+        font-size: 5vw;
+    }
+    #testimonialsGrid {
+        grid-template-columns: 1fr;
+    }
+}
