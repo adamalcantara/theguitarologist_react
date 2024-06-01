@@ -6,6 +6,7 @@ import Adam from "../../img/adam_square.jpg"
 function About() {
   return (
     <div>
+      <p className='headerText'>About Me</p>
       {/* About paragraph */}
       <p id="about"><img src={Adam} id="adamHeadshot" alt="Adam's headshot"></img>Welcome to my website! My name is Adam, and I&#39;m a photographer and lutherie hobbyist. I&#39;ve been fascinated by guitars ever since I saw John Lennon playing his iconic Rickenbacker 325 in The Beatles Anthology. I started tinkering with guitars in middle school, which led to learning to build them through the books of Melvyn Hiscock, Martin Koch, and Dan Erlewine, as well as first-hand knowledge from my friends Mark Benson and Larry Davis.
 

@@ -1,0 +1,28 @@
+#contactText {
+    font-size: 20px;
+    text-align: center;
+}
+
+#contactArea {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#contactImg {
+    width: 50%;
+    height: 100%;
+}
+
+@media screen and (max-width: 780px) {
+    #contactArea {
+        flex-direction: column;
+    }
+    #contactImg {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

@@ -16,6 +16,12 @@ h1, h2, .testimonialText {
   text-align: center;
 }
 
+.headerText {
+  text-align: center;
+  font-size: 45px;
+  margin: 0;
+}
+
 .pageContent {
   width: 90%;
   margin: 0 auto;
