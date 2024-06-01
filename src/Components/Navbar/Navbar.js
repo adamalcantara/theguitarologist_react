@@ -20,9 +20,9 @@ class Navbar extends Component {
                 <img src={logo} alt="The Guitarologist Logo" id="logo"></img>
                 {/* Nav */}
                 <ul id='navigation'>
-                    <li><Link className='menuItem'>My Work</Link></li>
-                    <li><Link className='menuItem'>About</Link></li>
-                    <li><Link className='menuItem'>Contact</Link></li>
+                    <li><Link to="/" className='menuItem'>My Work</Link></li>
+                    <li><Link to="/about" className='menuItem'>About</Link></li>
+                    <li><Link to="/contact" className='menuItem'>Contact</Link></li>
                 </ul>
             </div>
 
@@ -41,9 +41,9 @@ class Navbar extends Component {
                 </div>
 
                 <div className={this.state.clicked ? 'navbar active' : 'navbar'}>
-                    <Link className='mobileItem'>My Work</Link>
-                    <Link className='mobileItem'>About</Link>
-                    <Link className='mobileItem'>Contact</Link>
+                    <Link to="/" className='mobileItem'>My Work</Link>
+                    <Link to="/about" className='mobileItem'>About</Link>
+                    <Link to="/contact" className='mobileItem'>Contact</Link>
                 </div>
             </div>
         </div>
