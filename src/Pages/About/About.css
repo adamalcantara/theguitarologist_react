@@ -52,6 +52,18 @@
     grid-gap: 50px;
 }
 
+#instagram {
+    background-image: url(../../img/instagram.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#facebook {
+    background-image: url(../../img/facebook.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 @media screen and (max-width: 1500px) {
     #adamHeadshot {
         width: 25%;

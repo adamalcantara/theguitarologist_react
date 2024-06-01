@@ -24,12 +24,12 @@ function About() {
       {/* Social media */}
       <h1>Visit Me On Social Media</h1>
       <div id="socialGrid">
-        <div className='links'>
+        <div id='instagram' className='links'>
           <a href='https://www.instagram.com/theguitarologist/' target='_blank' rel='noopener noreferrer'>
             <div className='overlay'>Instagram</div>
           </a>
         </div>
-        <div className='links'>
+        <div id='facebook' className='links'>
           <a href='https://www.facebook.com/theguitarologist' target='_blank' rel='noopener noreferrer'>
             <div className='overlay'>Facebook</div>
           </a>
