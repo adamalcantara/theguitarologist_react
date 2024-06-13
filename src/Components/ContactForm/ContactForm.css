@@ -20,7 +20,7 @@ label {
     height: 200px;
 }
 
-button {
+#formBtn {
     width: 100px;
     background-color: #306595;
     border: none;
@@ -30,7 +30,7 @@ button {
     margin: 20px 0;
 }
 
-button:hover {
+#formBtn:hover {
     background-color: #cc9562;
     cursor: pointer;
 }
