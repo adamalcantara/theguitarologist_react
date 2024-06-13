@@ -12,3 +12,9 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+@media screen and (max-width: 780px) {
+    #footer {
+        font-size: 2vw;
+    }
+}
