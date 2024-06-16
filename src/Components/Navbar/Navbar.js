@@ -17,7 +17,9 @@ class Navbar extends Component {
         <div>
             <div id='navbar'>
                 {/* Logo */}
-                <img src={logo} alt="The Guitarologist Logo" id="logo"></img>
+                <Link to="/">
+                    <img src={logo} alt="The Guitarologist Logo" id="logo"></img>
+                </Link>
                 {/* Nav */}
                 <ul id='navigation'>
                     <li><Link to="/" className='menuItem'>My Work</Link></li>
